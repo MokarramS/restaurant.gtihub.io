@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all ease 0.5s;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+a:hover{
+    text-decoration: none;
+}
+.section{
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.section h2.section-head{
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section h2.section-head:after{
+    background: #EA2027;
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin: 20px auto;
+}
+#header{
+    width: 100%;
+    background: black !important;
+    color: #fff !important;
+    padding-top: 18px;
+    padding-bottom: 10px;
+    background: #fff;
+
+    z-index: 100;
+}
+  
+.navbar-brand{
+    color: #EA2027;
+    font-size: 2rem;
+}
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li{
+    padding: 2px 5px;
+}
+
+#menu li a{
+    padding: 12px 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 420;
+    letter-spacing: 1px;
+
+}
+#menu li a:hover{
+    color: red;
+}
+
+/*............ banner section................ */
+#banner{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) ,url(../images/banner11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    padding-top: 100px;
+}
+.banner-title {
+    margin-top: 20%;
+}
+.banner-title h1{
+    color: #EA2027;
+    font-size: 3.2rem;
+}
+.banner-title p{
+    color: #fff;
+}
+.banner-title h1{
+			width: 0ch;
+			overflow-x: hidden;
+			white-space: nowrap;
+			animation :text 10s steps(18) infinite;
+			border-right: 2px solid #EA2027;
+			padding: 5px;
+			font-size: 3.2rem !important;
+}
+@keyframes text {
+			0% {
+				width: 0ch;
+			}
+			50% {
+				width: 16ch;
+			}
+		}
+		
+
+/* ------------service---------------- */
+.service-box{
+    text-align: center;
+    padding: 15px;
+    transition: all 0.6s;
+}
+.service-box:hover{
+    transform: translateY(-7px);
+    box-shadow:2px 2px 2px 2px black;
+    color: #EA2027;
+}
+.service-box i{
+    color: #EA2027;
+    font-size: 3.4rem;
+    margin-bottom: 5px;
+}
+/* ------------trainers---------------- */
+#trainers{
+    color: #fff;
+    width:100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url('../images/trainers.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 0px;
+}
+#trainers:hover{
+    color: #fff;
+}
+#trainers img:hover{
+ transform: scale(1.2);
+}
+#trainers .social{
+    font-size: 1.6rem;
+}
+#trainers .social i{
+    padding: 3px;
+    cursor: pointer;
+}
+#trainers .social i:hover{
+    color: #EA2027;
+}
+/* --------------news-------------------- */
+#news{
+    font-size: 15px;
+}
+#news a{
+    color: #EA2027;
+    font-weight: 400;
+}
+#news img{
+    height: 200px;
+    width: 300px;
+}
+/* from */
+#form{
+    width: 100%;
+    /* background: rgba(0,0,0, 0.8); */
+    /* background: #4b4b4b; */
+    /* color: #fff; */
+}
+#form input {
+    font-size: 15px;
+}
+#form button{
+    margin-left: 40%;
+}
+#form button:hover{
+    background: #EA2027;
+
+    color: #fff;
+}
+/* -------footer---------------- */
+#footer{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+}
+#footer li{
+    list-style: none;
+}
+#footer li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 0;
+}
+#footer li a:hover{
+    color: #EA2027;
+}
+#footer h3{
+    color: #EA2027;
+}
+#footer .social{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+#footer .social i{
+    padding: 4px;
+}
+#footer .social i:hover{
+    color: #EA2027;
+}
+
+
+@media (max-width: 768px){
+    *{
+        font-size: 14px;
+    }
+    .section{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+    #menu a{
+        font-size: 12px;
+    }
+    .banner-title h1{
+        font-size: 2.5rem !important;
+    }
+    #services .service-box{
+        margin-bottom: 25px;
+    }
+    #trainers .trainer{
+        margin-bottom: 45px;
+    }
+    #news .news-post{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    #footer .footer-widget{
+        margin-bottom: 45px;
+       
+    }
+}
+
+
+
